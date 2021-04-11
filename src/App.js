@@ -1,11 +1,13 @@
 import React from 'react';
 // Styles
 import './tailwind.output.css'
+//components
+import Header from './components/ui/Header';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-900">
-      <h2 className="text-center text-4xl font-bold text-white">TailwindCSS + React</h2>
+      <Header/>
     </div>
   )
 }
