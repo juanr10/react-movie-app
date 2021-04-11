@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
     return ( 
         <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
@@ -19,18 +19,18 @@ const Header = () => {
             </div>
             <div className={"w-full block flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out " + (navbarOpen ? '' : 'hidden')}>
                 <div className="text-md lg:flex-grow text-white">
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300 mr-4 ">
+                    <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300 mr-4 ">
                         Docs
                     </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300 mr-4">
+                    <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300 mr-4">
                         Examples
                     </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300">
+                    <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-purple-300">
                         Blog
                     </a>
                 </div>
                 <div>
-                    <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-purple-200 hover:text-white hover:bg-purple-400 mt-4 lg:mt-0">Download</a>
+                    <a href="/" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-purple-200 hover:text-white hover:bg-purple-400 mt-4 lg:mt-0">Download</a>
                 </div>
             </div>
          </nav>
